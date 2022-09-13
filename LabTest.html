@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LabTest</title>
+</head>
+<link rel="stylesheet" href="labTest.css">
+
+<body>
+    <section>
+        <div>
+            <form action="#" method="get">
+                <table>
+                    <tr>
+                        <td>
+                            <h2 class="headings">1.Your Contact Details</h2>
+                            <table>
+                                <tr>
+                                    <td><label class="label" for="fullName">Full Name</label></td>
+                                    <td><input type="text" class="input" id="fullName" name="fullName" pattern="[A-Z]{3,40}" required /></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="label" for="ID">Patient Id if exists</label></td>
+                                    <td><input type="number" class="input" id="ID" min="1" max="100000" name="ID" required />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="label" for="Phoneno.">Contact Number</label></td>
+                                    <td><input type="tel" class="input" id="num" name="phone" pattern="[0-9]{10}" required />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="label" for="Email">Email Id</label></td>
+                                    <td><input type="text" class="input" id="Email" name="Email" pattern="[0-9]{10}" required />
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <h2 class="heading">2.Address </h2>
+                            <table>
+                                <tr>
+                                    <td><label class="label" for="h.no.">House Number</label></td>
+                                    <td><input type="Number" class="input" id="h.no." name="h.no." required /></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="label" for="street">Street</label></td>
+                                    <td><input type="text" class="input" id="street" name="street" required /></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="label" for="area">Area</label></td>
+                                    <td><input type="text" class="input" id="area" name="area" required /></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="label" for="district">District</label></td>
+                                    <td><select name="district" id="district" title="select one option" required>
+                                            <option value="">Choose</option>
+                                            <option value="">Hyderabad</option>
+                                            <option value="">Mahbubnagar</option>
+                                            <option value="">Medak</option>
+                                            <option value="">Nalgonda</option>
+                                            <option value="">Nizambad</option>
+                                            <option value="">Adilabad</option>
+                                            <option value="">Karimnagar</option>
+                                            <option value="">Warangal</option>
+                                        </select></td>
+                                </tr>
+                            </table>
+
+                            <h2 class="heading">3.Choose the Test Type<span>(Check atleast one box without fail)</span></h2>
+                            <table>
+                                <tr>
+                                    <td><input type="checkbox" class="testtype" id="CBC" name="CBC" /></td>
+                                    <td><label class="check" for="CBC">CBC</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="testtype" id="Complete Urine" name="Complete Urine" />
+                                    </td>
+                                    <td><label class="check" for="Complete Urine">Complete Urine</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="testtype" id=" Lipid Profile" name=" Lipid Profile" />
+                                    </td>
+                                    <td><label class="check" for="Lipid Profile"> Lipid Profile</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="testtype" id=" Thyroid Stimulating Hormone(TSH)" name=" Thyroid Stimulating Hormone(TSH)" /></td>
+                                    <td><label class="check" for="Thyroid Stimulating Hormone(TSH)"> Thyroid Stimulating
+                                            Hormone(TSH)</label></td>
+                                </tr>
+                                <tr>
+
+                                    <td><input type="checkbox" class="testtype" id="  Glucose Test" name="Glucose Test" /></td>
+                                    <td><label class="check" for=" Glucose Test"> Glucose Test</label></td>
+                                </tr>
+                            </table>
+
+                            <h2 class="heading">4.Do you want a hard copy of report also?</h2>
+                            <table>
+                                <tr>
+                                    <td><input type="radio" class="report" id="yes" name="option" required /></td>
+                                    <td><label class="radio" for="y">Yes</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" class="report" id="no" name="option" required /></td>
+                                    <td><label class="radio" for="n">No</label></td>
+                                </tr>
+                            </table>
+
+                            <h2 class="heading">5. Select Your Comfortable Date and Time</h2>
+                            <table>
+                                <tr>
+                                    <td><label class="DateTime" for="Date">Date:</label></td>
+                                    <td><input type="date" class="DateTime" id="date" name="date" required /></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="DateTime" for="Time">Time:</label></td>
+                                    <td><input type="time" class="DateTime" id="time" name="time" required /></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <p>
+                                <img src="Images/Lab-Test/lab-test.jpg" class="rightImage" style="float: right;" />
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <button class="reset" type="reset" value="Reset">Reset</button>
+        <button class="submit">Submit</button>
+    </footer>
+</body>
+
+</html>
